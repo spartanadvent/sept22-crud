@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function(){
         new_element = document.createElement(element_name);
         unordered_list.appendChild(new_element);
         new_element.innerText = input_box.value;
+        input_box.value = '';
       new_element.addEventListener('click',function(){
           this.innerText = prompt();
+          
       });
         new_element.addEventListener('contextmenu',function(event){
             
@@ -21,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function(){
             event.preventDefault();
             return false;
         },false);
-        
         
     }
     
